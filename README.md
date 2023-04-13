@@ -4,30 +4,16 @@ This Python script aims to predict fraudulent activity in banking transactions u
 
 The process can be explained as follows:
 
-Import the necessary libraries, including pandas, numpy, seaborn, matplotlib.pyplot, and scikit-learn.
+1) Explored the dataset by printing first few rows, obtaining summary statistics using describe() method, and checking for missing values.
 
-Load the credit card transaction dataset into a pandas DataFrame.
+2) Visualized the distribution of classes using a count plot and create a correlation matrix using a heatmap plot to determine correlation between features.
 
-Explore the dataset by printing the first few rows of the data, obtaining summary statistics with the describe() method, and checking for any missing values in the dataset.
+3) Used box plots to compare the distribution of amounts for fraudulent and non-fraudulent transactions, visualize the distribution of time using a histogram, and use histograms to plot the distribution of each feature.
 
-Visualize the distribution of the classes (fraudulent vs. non-fraudulent transactions) using a count plot.
+4) Split the dataset into training and testing sets and create a logistic regression model.
 
-Create a correlation matrix to determine any correlation between the features of the dataset. This is achieved by using a heatmap plot.
+5) Train the model on the training data and predict the classes of the test data.
 
-Use box plots to compare the distribution of amounts for fraudulent and non-fraudulent transactions.
+6) Evaluated the accuracy of the model by calculating the accuracy score, confusion matrix, and classification report.
 
-Visualize the distribution of time by plotting a histogram.
-
-Use histograms to plot the distribution of each feature in the dataset.
-
-Split the dataset into training and testing sets.
-
-Create a logistic regression model.
-
-Train the model on the training data.
-
-Predict the classes of the test data using the trained model.
-
-Evaluate the accuracy of the model by calculating the accuracy score, the confusion matrix, and the classification report.
-
-The final result of this process is a logistic regression model that can be used to detect fraudulent activity in banking transactions with high accuracy. By using this model, banks can reduce their losses from fraudulent activities and increase overall fraud prevention.
+7) The final result is a logistic regression model that can detect fraudulent activity in banking transactions with high accuracy, which can help reduce losses from fraudulent activities and increase overall fraud prevention.
